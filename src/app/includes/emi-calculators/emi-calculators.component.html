@@ -1,0 +1,40 @@
+
+<div class="calculator-container mt-5">
+    <h2 class="calculator-heading">Loan Calculator</h2>
+  
+    <div class="input-group">
+      <label class="input-label">Loan Amount</label>
+      <div class="input-wrapper">
+        <span class="currency-symbol">₹</span>
+        <input type="range" class="slider" min="100000" max="1000000" [(ngModel)]="price" (ngModelChange)="calculateEmi()">
+        <span class="slider-value">{{ price | currency:'INR' }}</span>
+      </div>
+    </div>
+  
+    <div class="input-group">
+      <label class="input-label">Loan Duration (Years)</label>
+      <div class="input-wrapper">
+        <input type="range" class="slider" min="1" max="10" [(ngModel)]="duration" (ngModelChange)="calculateEmi()">
+        <span class="slider-value">{{ duration }}</span>
+      </div>
+    </div>
+  
+    <div class="input-group">
+      <label class="input-label">Interest Rate (%)</label>
+      <div class="input-wrapper">
+        <input type="range" class="slider" min="7" max="20" [(ngModel)]="interestRate" (ngModelChange)="calculateEmi()">
+        <span class="slider-value">{{ interestRate }}</span>
+      </div>
+    </div>
+  
+    <div class="result-group">
+      <div class="result-label">Monthly EMI</div>
+      <div class="result-value">{{ emi | currency:'INR' }}</div>
+    </div>
+  
+    <div class="result-group">
+      <div class="result-label">Total Interest Payable</div>
+      <div class="result-value">{{totalInterest | currency:'INR' }}</div>
+    </div>
+  </div>
+  

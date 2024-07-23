@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Loan Module</title>
+    
+    <style>
+        /* Custom styles for the navigation */
+        .navbar {
+            background-color: #8cf073; /* Custom primary color */
+            padding: 15px; /* Adjust padding */
+            display: flex;
+            justify-content: space-between; /* Distribute items evenly */
+            align-items: center; /* Center items vertically */
+            color: #ffffff; /* White text */
+            font-size: 20px; /* Font size */
+        }
+        /* Custom styles for the header */
+        .bg-primary h1 {
+            color: #343a40; /* Custom header color */
+            margin: 0; /* Remove default margin */
+        }
+        /* Custom styles for the buttons */
+        .bg-primary button {
+            color: #ffffff; /* White text */
+            background-color:#f89808 ; /* Dark background color */
+            border-color: #343a40; /* Matching border color */
+            margin-right: 10px; /* Adjust spacing between buttons */
+            transition: background-color 0.3s ease; /* Smooth transition */
+        }
+        /* Hover effect on buttons */
+        .bg-primary button:hover {
+            background-color: #0056b3; /* Darker color on hover */
+            border-color: #0056b3; /* Matching border color on hover */
+        }
+    </style>
+</head>
+<body >
+    <!-- Container for navigation and additional content -->
+    <div class="bg-primary">
+        <!-- Navigation bar -->
+        <nav class="navbar d-flex justify-content-around">
+            <img src="assets/images/car.jpg" width="70" height="70" alt="">
+            <h1>ABC Bank</h1>
+            <div>
+                <button class="btn btn-dark mt-2 me-4" routerLink="home">Home</button>
+                <button class="btn btn-dark mt-2 me-4" routerLink="enquiry">Enquiry</button>
+                <button class="btn btn-dark mt-2 me-4" routerLink="signIn">SignIn</button>
+                <button class="btn btn-dark mt-2 me-4" routerLink="emi">EmiCalculator</button>
+            </div>
+        </nav>
+
+       
+    </div>
+
+    
+</body> 
+</html>
